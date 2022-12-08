@@ -1,0 +1,408 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* height: 10000px; */
+}
+header{
+    height: 100vh;
+    /* background-color: #1a81ff; */
+    position: fixed;
+    top: 0;
+}
+@media screen and (max-width: 400px) {
+    header {
+      display: none;
+    }
+  }
+@media screen and (max-width: 768px) {
+    header {
+      display: none;
+    }
+  }
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 50px;
+    line-height: 47px;
+    height: 70%;
+    width: 80%;
+    /* background-color: yellowgreen; */
+}
+
+.nav-links a  {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 10px;
+}
+.nav-links img{
+   margin-left: 2px;
+   width: 35px;
+}
+.nav-links a:hover {
+    background-color: rgba(184, 181, 181, 0.644);
+    border-radius: 9999px;
+    /* width: 100%; */
+    transition: 0.3s;
+   
+}
+.nav-details {
+    font-weight: 700;
+    margin-left: 15px;
+    color: rgba(0, 0, 0, 0.629);
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 1200px) {
+    .nav-details {
+      display: none;
+    }
+  
+  }
+.active{
+    color: #000;
+}
+.left-bottom-nav{
+    margin-top: 20px;
+}
+.nav-butt{
+    background-color: rgb(29, 155, 240);
+    margin-left: 20px;
+    width: 100%;
+    height: 45px;
+    border:none;
+    border-radius: 9999px;
+    color: white;
+    font-weight: 700;
+    transition-duration: 0.2s;
+}
+.nav-butt:hover{
+    background-color: rgba(29, 155, 240, 0.9);
+}
+.nav-butt1{
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    .nav-butt1{
+        display: block;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin-left:50px ;
+        background-color:  rgb(29, 155, 240);
+        border: none;
+        transition: 0.5s all;
+    }
+    .nav-butt1:hover{
+        background-color: rgba(29, 155, 240, 0.9);
+    }
+    .nav-butt{
+        display: none;
+    }
+
+}
+
+.profile{
+    width: 170px;
+    height: 30%;
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+.profile a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+.profile-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.mypic{
+    width: 50px ;
+    height: 50px;
+    border-radius: 50%;
+   
+}
+.acc-name{
+    font-weight: 700;
+}
+.acc-user{
+    color: rgb(165, 164, 164);
+}
+@media screen and (max-width: 1200px) {
+    .acc-name,.acc-user {
+      display: none;
+    }
+  }
+   /* End Left Navbar  */
+main{
+    margin-left: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.218);
+   }
+
+@media screen and (max-width: 400px) {
+    main {
+        margin-left: 0px;
+    }
+    .nav-links a i{
+        margin: 20px 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    main {
+        margin-left: 0px;
+    }
+    .nav-links a i{
+        margin: 20px 0;
+    }
+  }
+
+.main-center{
+    width: 100%;
+    /* height: 100%; */
+}
+.high-div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* width: 42% !important;  */
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.549);
+    z-index: 11111111111;
+}
+.fa-brands{
+    color:rgb(29, 155, 240) ;
+    margin-right: 6px;
+    cursor: pointer;
+    border: 1px  black;
+    border-radius: 9999px;
+    padding: 5px;
+    
+}
+.fa-brands:hover{
+    background-color: rgba(184, 181, 181, 0.644);
+  
+}
+.high-details{
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 6px;
+    
+}
+.main-info{
+    margin-right: 6px;
+    margin-left: 6px;
+}
+.pic-input{
+    display: flex;
+}
+.mypic2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.fa-solid{
+    margin-left: 3px;
+} 
+
+.inputss{
+    margin-top: 10px;
+}
+.tweet-input{
+    border: none ;
+    font-size: 17px;
+    width: 50%;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin-top: 15px;
+    margin-left: 10px;
+    outline: none;
+}
+
+.aloticons{
+    color:rgb(29, 155, 240);
+    margin-top: 33px;
+    margin-left: 10px;
+    letter-spacing: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.butt-tweet2{
+    background-color: rgb(29, 155, 240);
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    width: 65px;
+    height: 30px;
+    transition: 0.5s all;
+}
+
+.butt-tweet2:disabled{
+    background-color: rgba(29, 156, 240, 0.579);
+}
+
+  .new-tweets{
+    transition: 0.5s all;
+  }
+.new-tweets:hover{
+    background-color: #7f858a16;
+    cursor: pointer;
+    
+}
+.edit:hover{
+    color: aquamarine;
+}
+.post{
+border: none;
+margin-left: -10px;
+width: 103%;
+transition: 0.5s all;
+}
+.post:hover{
+    background-color: #7f858a16;
+    cursor: pointer;
+
+}
+.card-title{
+    color: rgba(0, 0, 0, 0.684);
+    font-size: 14px;
+}
+.image{
+    width: 50px;
+    height: 50px;
+}
+
+.icon{
+    padding:7px;
+    border-radius: 50%;
+    font-size: 13px;
+    transition: 0.5s all;
+    color: rgba(0, 0, 0, 0.6);
+}
+.icon:hover{
+    background-color: rgba(0, 0, 0, 0.203);
+    
+}
+.num{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+.comment:hover .icon{
+    background-color: rgba(29, 156, 240, 0.252);
+    color:rgb(29, 155, 240) ;
+}
+.comment:hover .num{
+    color:rgb(29, 155, 240) ;
+}
+.retweet:hover .icon{
+    background-color: rgba(29, 240, 99, 0.252);
+    color:rgb(29, 240, 78) ;
+}
+.retweet:hover .num{
+    color:rgb(29, 240, 40) ;
+}
+.like:hover .icon{
+    background-color: rgba(240, 29, 29, 0.252);
+    color:rgb(240, 29, 29) ;
+}
+.like:hover .num{
+    color:rgb(240, 29, 29) ;
+}
+.share:hover .icon{
+    background-color: rgba(29, 156, 240, 0.154);
+    color:rgb(29, 155, 240) ;
+}
+@media screen and (max-width: 400px) {
+    aside {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    aside {
+        display: none;
+    }
+}
+
+
+.search{
+    border-radius: 50px;
+    margin: auto;
+    width: 100%;
+    border: none;
+    background-color: #bcc0c443;
+    padding: 10px;
+    transition: 0.5 all;
+}
+::placeholder{
+
+    position: absolute;
+    left: 50px;
+}
+.search:focus{
+    outline: none  ;
+    border: 1px solid rgb(29 155 240);
+    background-color: transparent;
+}
+
+.img-fluid{
+    z-index: 2222;
+    background-color: #fff;
+}
+.glass{
+    margin-bottom: -33px;
+    margin-left: 10px;
+    color: rgb(29 155 240);
+
+}
+.happen{
+    background-color: #bcc0c40e;
+    padding: 7px;
+    margin-top: 100px;
+}
+.child{
+    transition: 0.5s all;
+    padding: 2px;
+}
+.child:hover{
+background-color: #e2e5e9;
+cursor: pointer;
+}
+.btn{
+    background-color: #000;
+    color: #fff;
+    height: 40px;
+    border-radius: 599px;
+    width: 80px;
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.833);
+    color: #fff;
+
+}
+@media screen and (max-width: 768px) {
+    aside {
+        display: none;
+    }
+    
+  }
+@media screen and (max-width: 1200px) {
+    aside {
+        display: none;
+    }
+    
+  }
